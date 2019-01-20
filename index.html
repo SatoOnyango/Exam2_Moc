@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Finding Favorites</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="header-left">
+          <a href="https://nexseed.net/" class="logo">NexSeed</a>
+          <a href="">ホーム</a>
+          <a href="#recomend">オススメ</a>
+          <a href="#new_arraival">新着</a>
+          <a href="#movie">映画</a>
+          <a href="#television">TV</a>
+        </div>
+      </div><!--end container -->
+    </header>
+
+
+
+
+    <div class="container slide-show">
+      <div class="top-wrapper">
+        <div id="aspslide">
+          <div id="asnakami1" class="asnakami"><a target="_blank"><img src="images/aquaman.jpg"></a></div>
+          <div id="asnakami2" class="asnakami"><a target="_blank"><img src="images/fantasticbeasts2.jpg"></a></div>
+          <div id="asnakami3" class="asnakami"><a target="_blank"><img src="images/"></a></div>
+          <div id="asnakami4" class="asnakami"><a target="_blank"><img src="images/"></a></div>
+          <div id="asnakami5" class="asnakami"><a target="_blank"><img src="images/"></a></div>
+        </div><!--aspslide-->
+      </div>
+    </div><br>
+
+    <div class="container">
+      <div class="lesson-wrapper">
+
+        <div id="recomend" class="">
+          <h2>オススメ</h2>
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg" >
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/fantasticbeasts2.jpg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter1.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter2.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg">
+              </div>
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+        </div><br>
+
+        <div id="new_arraival" class="">
+          <h2>新着</h2>
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg" >
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/fantasticbeasts2.jpg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter1.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter2.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg">
+              </div>
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+        </div><br>
+
+        <div id="movie" class="">
+          <h2>映画</h2>
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg" >
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/fantasticbeasts2.jpg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter1.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter2.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg">
+              </div>
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+        </div><br>
+
+        <div id="television" class="">
+          <h2>TV</h2>
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg" >
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/fantasticbeasts2.jpg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter1.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/harrypotter2.jpeg">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="caption">
+                <img src="images/aquaman.jpg">
+              </div>
+            </div>
+            <div class="col-xs-1"></div>
+          </div>
+        </div><br>
+
+      </div><!-- end lesson-wrapper-->
+    </div><!-- end container-->
+
+    <footer>
+      <div class="container">
+        <p>&copyNexSeed<a href="help.html">ヘルプ</a></p>
+
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      $(function(){
+          $('a[href^=#]').click(function(){
+              var speed = 500;
+              var href= $(this).attr("href");
+              var target = $(href == "#" || href == "" ? 'html' : href);
+              var position = target.offset().top;
+              $("html, body").animate({scrollTop:position}, speed, "swing");
+              return false;
+          });
+      });
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+

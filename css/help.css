@@ -97,17 +97,83 @@ footer>.container>p>a{
   text-align: center;
 }*/
 
+/************************************
+** トグル表示ボタン
+************************************/
+.toggle-wrap .toggle-button {
+  display: block;
+  cursor: pointer;
+  padding: 3px 10px;
+  background-color: #fff;
+  border: 1px solid #777;
+  text-align: left;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+ 
+.toggle-wrap .toggle-button:hover {
+  border-color: red;
+}
+ 
+.toggle-wrap .toggle-content,
+.toggle-wrap > input[type="checkbox"] {
+  display: none;
+}
+ 
+.toggle-wrap > input[type="checkbox"]:checked ~ .toggle-content {
+  display: block;
+}
 
+.toggle-wrap{
+  text-align: left;
+}
 
+form>div{
+  font-size: 20px;
+}
 
+.form-text{
+  width: 30%;
+  float: left;
+}
+.form-box{
+  width: 70%;
+  float: left;
+  padding-bottom: 20px;
+}
 
+.h4-right{
+  float: right;
+}
 
+.submit-button{
+  float: right;
+  margin-right: 30px;
+}
 
+.category{
+  width: 520px;
+  margin-top: 10px;
+}
 
+textarea{
+  margin-top: 10px;
+}
 
+.form-box>div>input{
+  width: 515px;
+}
 
-
-
+.square_btn{
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #000080;
+    
+  
+}
 
 
 

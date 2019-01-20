@@ -159,6 +159,8 @@ form>div{
 
 textarea{
   margin-top: 10px;
+  outline: 0;
+  border-radius: 25px;
 }
 
 .form-box>div>input{
@@ -188,12 +190,16 @@ textarea:focus:valid{
 }
 
 :disabled {
-  background-color: gray;
+  background-color: #b3aeb5;
   color: inherit;
   cursor: not-allowed;
 }
 
-
+input{
+  outline: 0;
+  border-radius: 25px;
+  border-color: #a9a9a9;
+}
 
 
 

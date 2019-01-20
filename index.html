@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Finding Favorites</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -27,148 +28,774 @@
     <div class="container slide-show" id="top">
       <div class="top-wrapper">
         <div id="aspslide">
-          <div id="asnakami1" class="asnakami"><a target="_blank"><img src="images/aquaman.jpg"></a></div>
+          <div id="asnakami1" class="asnakami"><a target="_blank"><img src="images/queen3.jpg"></a></div>
           <div id="asnakami2" class="asnakami"><a target="_blank"><img src="images/fantasticbeasts2.jpg"></a></div>
-          <div id="asnakami3" class="asnakami"><a target="_blank"><img src="images/drama.jpg"></a></div>
-          <div id="asnakami4" class="asnakami"><a target="_blank"><img src="images/"></a></div>
-          <div id="asnakami5" class="asnakami"><a target="_blank"><img src="images/"></a></div>
+          <div id="asnakami3" class="asnakami"><a target="_blank"><img src="images/inception.jpg"></a></div>
+          <div id="asnakami4" class="asnakami"><a target="_blank"><img src="images/drama.jpg"></a></div>
+          <div id="asnakami5" class="asnakami"><a target="_blank"><img src="images/aquaman.jpg"></a></div>
         </div><!--aspslide-->
       </div>
     </div><br>
 
     <div class="container">
       <div class="lesson-wrapper">
-
         <div id="recomend" class="">
           <h2>オススメ</h2>
-          <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg" >
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/fantasticbeasts2.jpg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter1.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter2.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg">
-              </div>
-            </div>
-            <div class="col-xs-1"></div>
-          </div>
+          <ul class="horizontal-list">
+
+            <li class="item">
+              <img src="images/aquaman.jpg" id="openModal">
+              <section id="modalArea" class="modalArea">
+                <div id="modalBg" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/aquaman.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>Aquaman</h2>
+                      <p>KING OF THE OCEAN<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/fantasticbeasts2.jpg" id="openModal2">
+              <section id="modalArea2" class="modalArea">
+                <div id="modalBg2" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/fantasticbeasts2.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>Fantastic Beasts</h2>
+                      <p>ハリポタ作品より少し前のお話<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal2" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/queen.jpg" id="openModal3">
+              <section id="modalArea3" class="modalArea">
+                <div id="modalBg3" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/queen.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>Bohemian Rhapsody</h2>
+                      <p>They are Queen of the Rock<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal3" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/yutori.png" id="openModal4">
+              <section id="modalArea4" class="modalArea">
+                <div id="modalBg4" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/yutori.png" alt="" />
+                    <div class="description-box">
+                      <h2>ゆとりですがなにか</h2>
+                      <p>人気ドラマ<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal4" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/ghibli1.jpg" id="openModal5">
+              <section id="modalArea5" class="modalArea">
+                <div id="modalBg5" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/ghibli1.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>となりのトトロ</h2>
+                      <p>大人気ジブリ作品！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal5" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/fantabi1.jpg" id="openModal6">
+              <section id="modalArea6" class="modalArea">
+                <div id="modalBg6" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/fantabi1.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Fantastic Beast2</h2>
+                      <p>今季注目の映画<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal6" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/wallofariyoshi.jpg" id="openModal7">
+              <section id="modalArea7" class="modalArea">
+                <div id="modalBg7" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/wallofariyoshi.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>有吉の壁</h2>
+                      <p>若手・中堅芸人が有吉を笑わせるために奮闘！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal7" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/feeldking.jpeg" id="openModal8">
+              <section id="modalArea8" class="modalArea">
+                <div id="modalBg8" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/feeldking.jpeg" alt="" />
+                    <div class="description-box">
+                      <h2>陸王</h2>
+                      <p>中小企業だって負けない！走れ！！陸王！！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal8" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+            <li class="item">
+              <img src="images/ghibli2.jpg" id="openModal9">
+              <section id="modalArea9" class="modalArea">
+                <div id="modalBg9" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/ghibli2.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>耳をすませば</h2>
+                      <p>人気ジブリ作品<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal9" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/queen2.jpg" id="openModal10">
+              <section id="modalArea10" class="modalArea">
+                <div id="modalBg10" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/queen2.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Bohemian Rhapsody</h2>
+                      <p>大ヒット上映中<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal10" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+          </ul>
+
         </div><br>
 
         <div id="new_arraival" class="">
           <h2>新着</h2>
-          <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg" >
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/fantasticbeasts2.jpg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter1.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter2.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg">
-              </div>
-            </div>
-            <div class="col-xs-1"></div>
-          </div>
+          <ul class="horizontal-list">
+            <li class="item">
+              <img src="images/aquaman.jpg" id="openModal11">
+              <section id="modalArea11" class="modalArea">
+                <div id="modalBg11" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/aquaman.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>Aquaman</h2>
+                      <p>KING OF THE OCEAN<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal11" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/fantabi1.jpg" id="openModal12">
+              <section id="modalArea12" class="modalArea">
+                <div id="modalBg12" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/fantabi1.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Fantastic Beast2</h2>
+                      <p>今季注目の映画<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal12" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+            <li class="item">
+              <img src="images/queen2.jpg" id="openModal13">
+              <section id="modalArea13" class="modalArea">
+                <div id="modalBg13" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/queen2.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Bohemian Rhapsody</h2>
+                      <p>大ヒット上映中<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal13" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+            <li class="item">
+              <img src="images/incrediblefamily.jpg" id="openModal14">
+              <section id="modalArea14" class="modalArea">
+                <div id="modalBg14" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/incrediblefamily.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Incredible Family</h2>
+                      <p>大ヒット上映中<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal14" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/banana.png" id="openModal15">
+              <section id="modalArea15" class="modalArea">
+                <div id="modalBg15" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/banana.png" alt="" />
+                    <div class="description-box">
+                      <h2>こんな夜更けにバナナかよ</h2>
+                      <p>大ヒット上映中！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal15" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/manbiki.jpg" id="openModal16">
+              <section id="modalArea16" class="modalArea">
+                <div id="modalBg16" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/manbiki.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>万引き家族</h2>
+                      <p>カンヌ国際映画祭で受賞！大ヒット上映中<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal16" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+            <li class="item">
+              <img src="images/hansolo.jpg" id="openModal17">
+              <section id="modalArea17" class="modalArea">
+                <div id="modalBg17" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/hansolo.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>ハン・ソロ</h2>
+                      <p>若き日のハン・ソロ！！大ヒット上映中！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal17" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/black-panther.jpg" id="openModal18">
+              <section id="modalArea18" class="modalArea">
+                <div id="modalBg18" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/black-panther.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>ブラック・パンサー</h2>
+                      <p>新たなヒーロー。誕生。<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal18" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/greatest-showman.jpg" id="openModal19">
+              <section id="modalArea19" class="modalArea">
+                <div id="modalBg19" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/greatest-showman.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>The Greatest Showman</h2>
+                      <p>This is ME<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal19" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/drama.jpg" id="openModal20">
+              <section id="modalArea20" class="modalArea">
+                <div id="modalBg20" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/drama.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>The Guardian</h2>
+                      <p>Just guard you<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal20" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+          </ul>
         </div><br>
 
         <div id="movie" class="">
           <h2>映画</h2>
-          <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg" >
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/fantasticbeasts2.jpg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter1.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter2.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg">
-              </div>
-            </div>
-            <div class="col-xs-1"></div>
-          </div>
+          <ul class="horizontal-list">
+            <li class="item">
+              <img src="images/aquaman.jpg" id="openModal21">
+              <section id="modalArea21" class="modalArea">
+                <div id="modalBg21" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/aquaman.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>Aquaman</h2>
+                      <p>KING OF THE OCEAN<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal21" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/greatest-showman.jpg" id="openModal22">
+              <section id="modalArea22" class="modalArea">
+                <div id="modalBg22" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/greatest-showman.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>The Greatest Showman</h2>
+                      <p>This is ME<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal22" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+            <li class="item">
+              <img src="images/ghibli1.jpg" id="openModal23">
+              <section id="modalArea23" class="modalArea">
+                <div id="modalBg23" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/ghibli1.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>となりのトトロ</h2>
+                      <p>大人気ジブリ作品！<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal23" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/hansolo.jpg" id="openModal24">
+              <section id="modalArea24" class="modalArea">
+                <div id="modalBg24" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/hansolo.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>ハン・ソロ</h2>
+                      <p>若き日のハン・ソロ！！大ヒット上映中！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal24" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/fantabi1.jpg" id="openModal25">
+              <section id="modalArea25" class="modalArea">
+                <div id="modalBg25" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/fantabi1.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Fantastic Beast2</h2>
+                      <p>今季注目の映画<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal25" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/ghibli2.jpg" id="openModal26">
+              <section id="modalArea26" class="modalArea">
+                <div id="modalBg26" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/ghibli2.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>耳をすませば</h2>
+                      <p>人気ジブリ作品<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal26" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/queen.jpg" id="openModal27">
+              <section id="modalArea27" class="modalArea">
+                <div id="modalBg27" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/queen.jpg" alt="" />
+
+                    <div class="description-box">
+                      <h2>Bohemian Rhapsody</h2>
+                      <p>They are Queen of the Rock<br> <br>Don't miss it !</p>
+                    </div>
+
+                    <div id="closeModal27" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/banana.png" id="openModal128">
+              <section id="modalArea128" class="modalArea">
+                <div id="modalBg128" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/banana.png" alt="" />
+                    <div class="description-box">
+                      <h2>こんな夜更けにバナナかよ</h2>
+                      <p>大ヒット上映中！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal128" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/fantabi1.jpg" id="openModal29">
+              <section id="modalArea29" class="modalArea">
+                <div id="modalBg29" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/fantabi1.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Fantastic Beast2</h2>
+                      <p>今季注目の映画<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal29" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/incrediblefamily.jpg" id="openModal30">
+              <section id="modalArea30" class="modalArea">
+                <div id="modalBg30" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/incrediblefamily.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>Incredible Family</h2>
+                      <p>大ヒット上映中<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal30" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+          </ul>
         </div><br>
 
         <div id="television" class="">
           <h2>TV</h2>
-          <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg" >
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/fantasticbeasts2.jpg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter1.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/harrypotter2.jpeg">
-              </div>
-            </div>
-            <div class="col-xs-2">
-              <div class="caption">
-                <img src="images/aquaman.jpg">
-              </div>
-            </div>
-            <div class="col-xs-1"></div>
-          </div>
+          <ul class="horizontal-list">
+
+            <li class="item">
+              <img src="images/yutori.png" id="openModal31">
+              <section id="modalArea31" class="modalArea">
+                <div id="modalBg31" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/yutori.png" alt="" />
+                    <div class="description-box">
+                      <h2>ゆとりですがなにか</h2>
+                      <p>人気ドラマ<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal31" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/wallofariyoshi.jpg" id="openModal32">
+              <section id="modalArea32" class="modalArea">
+                <div id="modalBg32" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/wallofariyoshi.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>有吉の壁</h2>
+                      <p>若手・中堅芸人が有吉を笑わせるために奮闘！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal32" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/ametalk.jpg" id="openModal33">
+              <section id="modalArea33" class="modalArea">
+                <div id="modalBg33" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/ametalk.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>アメトーーク!</h2>
+                      <p>人気芸人による爆笑トーク！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal33" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/conan.jpeg" id="openModal34">
+              <section id="modalArea34" class="modalArea">
+                <div id="modalBg34" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/conan.jpeg" alt="" />
+                    <div class="description-box">
+                      <h2>名探偵コナン</h2>
+                      <p>真実はいつも一つ！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal34" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/miraiconan.jpg" id="openModal35">
+              <section id="modalArea35" class="modalArea">
+                <div id="modalBg35" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/miraiconan.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>未来少年コナン</h2>
+                      <p>ラナをかえせー！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal35" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/yohukashi.jpeg" id="openModal36">
+              <section id="modalArea36" class="modalArea">
+                <div id="modalBg36" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/yohukashi.jpeg" alt="" />
+                    <div class="description-box">
+                      <h2>月曜から夜更かし</h2>
+                      <p>桐谷さんに注目！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal36" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/signal.jpg" id="openModal37">
+              <section id="modalArea37" class="modalArea">
+                <div id="modalBg37" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/signal.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>シグナル</h2>
+                      <p>大人気俳優が主演！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal37" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/feeldking.jpeg" id="openModal38">
+              <section id="modalArea38" class="modalArea">
+                <div id="modalBg38" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/feeldking.jpeg" alt="" />
+                    <div class="description-box">
+                      <h2>陸王</h2>
+                      <p>中小企業だって負けない！走れ！！陸王！！<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal38" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/heroes.jpg" id="openModal39">
+              <section id="modalArea39" class="modalArea">
+                <div id="modalBg39" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/heroes.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>HEROES</h2>
+                      <p>決めゼリフは「ヤッター！！！」<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal39" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+
+            <li class="item">
+              <img src="images/hero.jpg" id="openModal40">
+              <section id="modalArea40" class="modalArea">
+                <div id="modalBg40" class="modalBg"></div>
+                <div class="modalWrapper">
+                  <div class="modalContents">
+                    <img class="scale-with-grid" src="images/hero.jpg" alt="" />
+                    <div class="description-box">
+                      <h2>HERO</h2>
+                      <p>何のための裁判。誰のための裁判。<br> <br>Don't miss it !</p>
+                    </div>
+                    <div id="closeModal40" class="closeModal">
+                      ×
+                    </div>
+                  </div><!-- modalContents -->
+              </section>
+            </li>
+          </ul>
         </div><br>
 
       </div><!-- end lesson-wrapper-->
@@ -193,6 +820,9 @@
           });
       });
     </script>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 
   </body>
 </html>

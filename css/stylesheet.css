@@ -217,9 +217,28 @@ footer>.container>p>a{
 }
 
 
+.horizontal-list {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
+.item {
+  /* 横スクロール用 */
+  display: inline-block;
+  width: 200px;
+  /* 見た目調整 */
+  height: 200px;
+  margin: 16px;
+  font-size: 48px;
+  background: rgba(255, 0, 0, 0.4);
+}
 
-
+.item>img{
+  background-color: black;
+  width: 200px; height: 200px;
+  object-fit: contain;
+}
 
 
 

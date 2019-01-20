@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>F F Help</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/help.css">
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <div class="header-left">
+        <a href="https://nexseed.net/" class="logo">NexSeed</a>
+        <a href="index.html#top">ホーム</a>
+        <a href="index.html#recomend">オススメ</a>
+        <a href="index.html#new_arraival">新着</a>
+        <a href="index.html#movie">映画</a>
+        <a href="index.html#television">TV</a>
+      </div>
+    </div><!--end container -->
+  </header>
+
+
+
+  <div class="container">
+    <div class="top-wrapper">
+        ヘルプ<br>
+        <p>お困りごとですか？</p>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 top-body">
+        <div>
+          <h3>活用方法</h3>
+        </div>
+        <div>
+          <h3>視聴に関して</h3>
+        </div>
+        <div>
+          <h3>アカウントに関して</h3>
+        </div>
+        <div>
+          <h3>お支払い方法に関して</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2 main-body">
+        <form method="" action="">
+          <div>
+            名前<br>
+            <input type="text" name="nickname" style="width:100px">
+          </div>
+
+          <div>
+          メールアドレス<br>
+            <input type="text" name="email" style="width: 200px">
+          </div>
+
+          <div>
+          カテゴリ<br>
+            <select class="category" name="category" required>
+              <option value="" class="" disabled selected></option>
+              <option value="視聴に関して">視聴に関して</option>
+              <option value="アカウントに関して">アカウントに関して</option>
+              <option value="お支払いに関して">お支払いに関して</option>
+              <option value="その他">その他</option>
+            </select>
+          </div>
+
+          <div>
+            質問内容<br>
+            <textarea name="content" cols="40" rows="5"></textarea>
+          </div>
+          <input type="submit" value="送信"><br>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="container">
+        <p>&copyNexSeed<a href="help.html">ヘルプ</a></p>
+
+      </div>
+  </footer>
+
+
+
+
+  <script type="text/javascript">
+    $(function(){
+      $('a[href^=#]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+  </script>
+
+</body>
+</html>

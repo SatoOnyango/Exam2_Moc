@@ -13,6 +13,11 @@ a {
   margin: auto;
 }*/
 
+header{
+  position: fixed;
+  z-index: 10;
+}
+
 .header{
   padding-right: 100px;
   padding-left: 0px;
@@ -20,7 +25,7 @@ a {
 }
 
 .slide-show{
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 
@@ -95,7 +100,7 @@ div .caption>img{
 #aspslide{
       position: relative;      
       width: auto;
-      height: 500px;
+      height: 600px;
       overflow:hidden;
       padding:0!important;
 }
@@ -207,7 +212,9 @@ footer>.container>p>a{
   margin-top: 5px;
 }
 
-
+#aspslide{
+  margin-top: 80px;
+}
 
 
 

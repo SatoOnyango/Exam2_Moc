@@ -90,7 +90,7 @@
     <div class="row">
       <div class="col-xs-8 col-xs-offset-2 main-body">
         
-            <form method="" action="">
+            <form method="" action="" data-validate>
               <div class="form form-text">
                 <div>
                   <p>お名前</p>
@@ -107,10 +107,10 @@
               </div>
               <div class="form form-box">
                 <div>
-                  <input type="text" name="nickname">
+                  <input type="text" name="nickname" title="Please enter your name." required>
                 </div><br>
                 <div>
-                  <input type="text" name="email">
+                  <input type="email" name="email" title="Please enter your email." required>
                 </div><br>
                 <div>
                   <select class="category" name="category" required>
@@ -122,9 +122,9 @@
                   </select>
                 </div><br>
                 <div>
-                  <textarea name="content" cols="45" rows=15></textarea>
+                  <textarea name="content" cols="45" rows=15 required></textarea>
                 </div><br>
-                <input type="submit" value="送信" class="submit-button square_btn">
+                <input type="submit" value="送信" class="submit-button square_btn" name="commit" disabled>
               </div><br>
               
 
@@ -142,10 +142,15 @@
   <footer>
     <div class="container">
         <p>&copyNexSeed<a href="help.html">ヘルプ</a></p>
-
       </div>
   </footer>
-
+  <script>
+  jQuery(function ($) {
+    $('form[data-validate]').on('input', function () {
+      $(this).find(':submit').attr('disabled', !this.checkValidity());
+    });
+  });
+</script>
 
 </body>
 </html>
